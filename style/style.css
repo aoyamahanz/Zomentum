@@ -259,6 +259,8 @@ footer .awals .awal a {
   }
 
   nav {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     right: 0px;
     height: 100vh;
@@ -270,6 +272,7 @@ footer .awals .awal a {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     overflow-x: hidden;
+    display: none;
   }
 
   nav ul {
@@ -278,7 +281,7 @@ footer .awals .awal a {
     align-items: center;
     height: 85vh;
     margin-top: 10px;
-    overflow-x: hidden;
+    padding-left: 0px;
   }
 
   nav ul li {
@@ -300,8 +303,9 @@ footer .awals .awal a {
   }
 
   .nav-active {
-    /* display: inline; */
     transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
   }
 
   @keyframes navLinkFade {
@@ -328,6 +332,9 @@ footer .awals .awal a {
 }
 
 @media screen and (max-width: 426px) {
+  body {
+    overflow-x: hidden;
+  }
   .img-hero-left {
     height: 200px;
     width: 170px;
@@ -342,9 +349,19 @@ footer .awals .awal a {
   .content-3 div {
     margin: 10px 0px;
   }
+  .content-3 div h1 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .content-3 div p {
+    margin-left: 10px;
+    font-size: 12px;
+  }
   .content-3 div img {
     height: 400px;
     width: 320px;
+    margin-left: 10px;
+    margin-top: 0px;
   }
   .left-bottom {
     display: none;
@@ -402,6 +419,9 @@ footer .awals .awal a {
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
   .content-3 div img {
     height: 250px;
     width: 200px;
