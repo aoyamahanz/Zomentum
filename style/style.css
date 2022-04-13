@@ -249,8 +249,12 @@ footer .awals .awal a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     justify-content: space-between;
+    overflow-x: hidden;
   }
 
   nav {
@@ -261,16 +265,19 @@ footer .awals .awal a {
     top: 6.5vh;
     background-color: white;
     z-index: 1;
-    display: none;
+    display: flex;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    overflow-x: hidden;
   }
 
   nav ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 85vh;
     margin-top: 10px;
+    overflow-x: hidden;
   }
 
   nav ul li {
@@ -292,7 +299,7 @@ footer .awals .awal a {
   }
 
   .nav-active {
-    display: inline;
+    /* display: inline; */
     transform: translateX(0%);
   }
 
@@ -319,7 +326,7 @@ footer .awals .awal a {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .img-hero-left {
     height: 200px;
     width: 170px;
@@ -331,9 +338,12 @@ footer .awals .awal a {
     width: 170px;
     margin-top: -70px;
   }
+  .content-3 div {
+    margin: 10px 0px;
+  }
   .content-3 div img {
     height: 400px;
-    width: 400px;
+    width: 320px;
   }
   .left-bottom {
     display: none;
@@ -359,6 +369,10 @@ footer .awals .awal a {
   .content-2 {
     height: 400px;
   }
+  .content-2 .listSellGrowth div {
+    padding: 0;
+  }
+
   .content-2 .listSellGrowth div p {
     font-size: 12px;
   }
@@ -371,9 +385,12 @@ footer .awals .awal a {
 }
 
 @media screen and (max-width: 376px) {
+  body {
+    overflow-x: hidden;
+  }
   .content-3 div img {
-    height: 300px;
-    width: 300px;
+    height: 290px;
+    width: 270px;
   }
   .content-3 div h1 {
     font-size: 24px;
@@ -387,5 +404,12 @@ footer .awals .awal a {
   .content-3 div img {
     height: 250px;
     width: 200px;
+  }
+  .listSellGrowth div img {
+    height: 50px;
+    width: 50px;
+  }
+  .listSellGrowth div {
+    padding: 0;
   }
 }
