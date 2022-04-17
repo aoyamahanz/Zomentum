@@ -390,14 +390,23 @@ footer .awals .awal a {
   .content-2 .listSellGrowth div {
     padding: 0;
   }
-
   .content-2 .listSellGrowth div p {
     font-size: 12px;
   }
-  .awals .awal h1 {
-    font-size: 14px;
+  .content-3 {
+    margin-top: 0px;
   }
-  .awals .awal p {
+  .content-3 div img {
+    margin: 0px auto;
+  }
+
+  footer .awals .awal h1 {
+    font-size: 12px;
+  }
+  footer .awals .awal p {
+    font-size: 10px;
+  }
+  .footer .akirs .akhir {
     font-size: 12px;
   }
 }
@@ -415,6 +424,18 @@ footer .awals .awal a {
   }
   .content-3 div p {
     font-size: 14px;
+  }
+  footer .awals .awal {
+    margin-right: 10px;
+  }
+  footer .awals .awal h1 {
+    font-size: 12px;
+  }
+  footer .awals .awal p {
+    font-size: 8px;
+  }
+  .footer .akirs .akhir {
+    font-size: 10px;
   }
 }
 
